@@ -1,24 +1,47 @@
+/* Base Styling */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(90deg, #121212, #1e1e1e);
-    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #0f172a, #1e293b); /* dark navy to slate blue */
+    color: #f0f8ff; /* near-white with blue tint */
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
+/* Feature Box Styling */
 .feature-box {
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background: rgba(173, 216, 230, 0.12); /* light blue tint */
+    box-shadow: 0 4px 20px rgba(0, 0, 50, 0.2); /* soft dark blue shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 100, 0.3); /* more vibrant hover effect */
 }
 
+/* Footer Banner Styling */
 .footer-banner {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
+    background: linear-gradient(to right, #1e3a8a, #2563eb); /* deep blue to vibrant blue */
+    color: #ffffff;
+    padding: 15px;
     font-size: 16px;
+    margin-top: 40px;
+    border-top: 2px solid #3b82f6; /* accent blue line */
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility (Optional but useful) */
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #60a5fa;
 }
